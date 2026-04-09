@@ -22,7 +22,7 @@ classifiers = [
   "Topic :: Multimedia :: Graphics",
   "Topic :: Office/Business :: Office Suites",
 ]
-urls = { Homepage = "https://github.com/RomanOstr/pdf-form-tools", Repository = "https://github.com/RomanOstr/pdf-form-tools", Issues = "https://github.com/RomanOstr/pdf-form-tools/issues" }
+urls = { Homepage = "https://github.com/ceratops-code/pdf-form-tools", Repository = "https://github.com/ceratops-code/pdf-form-tools", Issues = "https://github.com/ceratops-code/pdf-form-tools/issues" }
 dependencies = [
   "numpy",
   "opencv-python-headless",

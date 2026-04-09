@@ -303,6 +303,8 @@ def paste_signature(
     line_rect: Rect,
     *,
     min_cm_width: float = 2.0,
+    target_height: int | None = None,
+    y_offset: int = 45,
 ) -> None:
     alpha_bbox = signature.getchannel("A").getbbox()
     if alpha_bbox:
@@ -310,10 +312,11 @@ def paste_signature(
 
     min_signature_width = int(round((overlay.width / 21.0) * min_cm_width))
     target_width = max(min_signature_width, int(line_rect.w * 0.55))
-    target_height = 260
+    if target_height is None:
+        target_height = 260
     resized = signature.resize((target_width, target_height), Image.Resampling.LANCZOS)
     x = int(line_rect.x + (line_rect.w - target_width) / 2)
-    y = int(line_rect.y - target_height + 45)
+    y = int(line_rect.y - target_height + y_offset)
     overlay.alpha_composite(resized, (x, y))
 
 
