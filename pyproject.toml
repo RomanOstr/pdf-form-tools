@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pdf-form-tools"
-version = "2.0.0"
+version = "2.0.1"
 description = "Template-aware tools for filling scanned PDF forms with visual verification"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -19,10 +19,11 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Topic :: Multimedia :: Graphics",
   "Topic :: Office/Business :: Office Suites",
 ]
-urls = { Homepage = "https://github.com/ceratops-code/pdf-form-tools", Repository = "https://github.com/ceratops-code/pdf-form-tools", Issues = "https://github.com/ceratops-code/pdf-form-tools/issues" }
+urls = { Homepage = "https://github.com/ceratops-code/pdf-form-tools", Repository = "https://github.com/ceratops-code/pdf-form-tools", Issues = "https://github.com/ceratops-code/pdf-form-tools/issues", Changelog = "https://github.com/ceratops-code/pdf-form-tools/releases" }
 dependencies = [
   "numpy",
   "opencv-python-headless",
@@ -50,6 +51,7 @@ include = ["pdf_form_tools*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]
 
 [tool.ruff]
 target-version = "py311"

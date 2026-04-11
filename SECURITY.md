@@ -11,7 +11,7 @@
 
 Do not open a public issue for a vulnerability that could expose user documents or private data.
 
-For sensitive reports, email `roman.ost85@gmail.com` with:
+For sensitive reports, use GitHub private vulnerability reporting from the repository's Security tab with:
 
 - affected version
 - impact

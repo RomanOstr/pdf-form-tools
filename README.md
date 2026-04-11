@@ -15,6 +15,8 @@ It is intentionally small:
 python -m pip install pdf-form-tools
 ```
 
+Supported Python versions: 3.11 through 3.14.
+
 ## Example
 
 ```python
@@ -35,7 +37,7 @@ merge_overlay_pdf(source_pdf, Path("overlay-page1.png"), Path("form-filled.pdf")
 ```bash
 python -m pip install -e ".[dev]"
 python -m ruff check .
-python -m pytest
+python -m pytest -W error::DeprecationWarning
 python -m build
 ```
 

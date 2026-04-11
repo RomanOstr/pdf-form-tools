@@ -12,7 +12,7 @@ Run these before opening a pull request:
 
 ```bash
 python -m ruff check .
-python -m pytest
+python -m pytest -W error::DeprecationWarning
 python -m build
 ```
 

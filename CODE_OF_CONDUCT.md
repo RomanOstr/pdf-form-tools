@@ -36,7 +36,7 @@ This Code of Conduct applies within all project spaces, and also applies when an
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at `roman.ost85@gmail.com`. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the repository maintainers through GitHub. If the report contains private information, do not include sensitive details in a public issue; request a private maintainer contact path first. All complaints will be reviewed and investigated promptly and fairly.
 
 All project maintainers are obligated to respect the privacy and security of the reporter of any incident.
 

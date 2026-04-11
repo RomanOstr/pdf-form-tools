@@ -347,9 +347,8 @@ def merge_overlay_pdf(src_pdf: Path, overlay_png: Path, out_pdf: Path) -> None:
     overlay_buffer.seek(0)
     overlay_reader = PdfReader(overlay_buffer)
 
-    merged_page = page
-    merged_page.merge_page(overlay_reader.pages[0])
-    writer.add_page(merged_page)
+    writer.add_page(page)
+    writer.pages[0].merge_page(overlay_reader.pages[0])
     for extra_page in reader.pages[1:]:
         writer.add_page(extra_page)
 

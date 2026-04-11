@@ -20,6 +20,9 @@ jobs:
           - windows-latest
         python-version:
           - "3.11"
+          - "3.12"
+          - "3.13"
+          - "3.14"
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -30,7 +33,7 @@ jobs:
       - name: Ruff
         run: python -m ruff check .
       - name: Pytest
-        run: python -m pytest
+        run: python -m pytest -W error::DeprecationWarning
       - name: Build package
         run: python -m build
       - name: Check package metadata

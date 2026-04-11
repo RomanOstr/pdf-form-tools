@@ -5,5 +5,5 @@
 ## Checks
 
 - [ ] `python -m ruff check .`
-- [ ] `python -m pytest`
+- [ ] `python -m pytest -W error::DeprecationWarning`
 - [ ] `python -m build`
